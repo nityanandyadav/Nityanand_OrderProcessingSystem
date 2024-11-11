@@ -1,0 +1,273 @@
+2024-11-11 11:00:00.4375|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN8225TN5DA9" received FIN.
+2024-11-11 11:00:00.4662|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8225TN5DA9" is closed. The last processed stream ID was 13.
+2024-11-11 11:00:00.4662|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN8225TN5DA9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-11 11:00:00.4662|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Http2|The connection queue processing loop for 0HN8225TN5DA9 completed.
+2024-11-11 11:00:00.4662|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN8225TN5DA9" stopped.
+2024-11-11 11:00:02.4459|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN8225TN5DAA" accepted.
+2024-11-11 11:00:02.4473|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN8225TN5DAA" started.
+2024-11-11 11:00:02.4473|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN8225TN5DAA established using the following protocol: Tls13
+2024-11-11 11:00:02.4473|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8225TN5DAA" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-11-11 11:00:02.4473|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8225TN5DAA" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-11-11 11:00:02.4473|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8225TN5DAA" received SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-11-11 11:00:02.4473|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8225TN5DAA" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-11-11 11:00:02.4473|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8225TN5DAA" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-11-11 11:00:02.4473|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8225TN5DAA" received HEADERS frame for stream ID 1 with length 385 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-11-11 11:00:02.4473|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8225TN5DAA" received SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-11-11 11:00:02.4665|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7237/api/Customer/22 - - -
+2024-11-11 11:00:02.4665|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Customer/22'
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'OrderProcessingSystem.API.Controllers.CustomerController.GetCustomerById (OrderProcessingSystem.API)' with route pattern 'api/Customer/{id}' is valid for the request path '/api/Customer/22'
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'OrderProcessingSystem.API.Controllers.CustomerController.GetCustomerById (OrderProcessingSystem.API)'
+2024-11-11 11:00:02.4665|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-11-11 11:00:02.4665|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'OrderProcessingSystem.API.Controllers.CustomerController.GetCustomerById (OrderProcessingSystem.API)'
+2024-11-11 11:00:02.4665|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomerById", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerById(Int32) on controller OrderProcessingSystem.API.Controllers.CustomerController (OrderProcessingSystem.API).
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller OrderProcessingSystem.API.Controllers.CustomerController (OrderProcessingSystem.API)
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller OrderProcessingSystem.API.Controllers.CustomerController (OrderProcessingSystem.API)
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to bind parameter 'id' of type 'System.Int32' ...
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to bind parameter 'id' of type 'System.Int32'.
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2024-11-11 11:00:02.4665|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder|Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2024-11-11 11:00:02.4665|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-11-11 11:00:02.4665|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-11-11 11:00:02.4665|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-11-11 11:00:02.4665|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-11-11 11:00:02.4665|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method OrderProcessingSystem.API.Controllers.CustomerController.GetCustomerById (OrderProcessingSystem.API) - Validation state: Valid
+2024-11-11 11:00:02.4665|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method OrderProcessingSystem.API.Controllers.CustomerController.GetCustomerById (OrderProcessingSystem.API) with arguments (22)
+2024-11-11 11:00:02.4665|INFO|OrderProcessingSystem.API.Controllers.CustomerController|Received request to fetch customer with ID 22
+2024-11-11 11:00:02.6188|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 8.0.10 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.10' with options: None
+2024-11-11 11:00:02.6275|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Creating DbConnection.
+2024-11-11 11:00:02.6275|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Created DbConnection. (0ms).
+2024-11-11 11:00:02.6275|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opening connection to database 'OrderProcessingSystemDb' on server '(localdb)\MSSQLLocalDB'.
+2024-11-11 11:00:02.6275|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Opened connection to database 'OrderProcessingSystemDb' on server '(localdb)\MSSQLLocalDB'.
+2024-11-11 11:00:02.6275|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Creating DbCommand for 'ExecuteReader'.
+2024-11-11 11:00:02.6275|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Created DbCommand for 'ExecuteReader' (0ms).
+2024-11-11 11:00:02.6275|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-11-11 11:00:02.6275|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Executing DbCommand [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[CustomerId], [t].[Name], [t0].[OrderId], [t0].[CustomerId], [t0].[IsFulfilled], [t0].[OrderDate], [t0].[OrderId0], [t0].[ProductsProductId], [t0].[ProductId], [t0].[Name], [t0].[Price]
+FROM (
+    SELECT TOP(1) [c].[CustomerId], [c].[Name]
+    FROM [Customers] AS [c]
+    WHERE [c].[CustomerId] = @__id_0
+) AS [t]
+LEFT JOIN (
+    SELECT [o].[OrderId], [o].[CustomerId], [o].[IsFulfilled], [o].[OrderDate], [t1].[OrderId] AS [OrderId0], [t1].[ProductsProductId], [t1].[ProductId], [t1].[Name], [t1].[Price]
+    FROM [Orders] AS [o]
+    LEFT JOIN (
+        SELECT [o0].[OrderId], [o0].[ProductsProductId], [p].[ProductId], [p].[Name], [p].[Price]
+        FROM [OrderProduct] AS [o0]
+        INNER JOIN [Products] AS [p] ON [o0].[ProductsProductId] = [p].[ProductId]
+    ) AS [t1] ON [o].[OrderId] = [t1].[OrderId]
+) AS [t0] ON [t].[CustomerId] = [t0].[CustomerId]
+ORDER BY [t].[CustomerId], [t0].[OrderId], [t0].[OrderId0], [t0].[ProductsProductId]
+2024-11-11 11:00:02.6275|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (4ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [t].[CustomerId], [t].[Name], [t0].[OrderId], [t0].[CustomerId], [t0].[IsFulfilled], [t0].[OrderDate], [t0].[OrderId0], [t0].[ProductsProductId], [t0].[ProductId], [t0].[Name], [t0].[Price]
+FROM (
+    SELECT TOP(1) [c].[CustomerId], [c].[Name]
+    FROM [Customers] AS [c]
+    WHERE [c].[CustomerId] = @__id_0
+) AS [t]
+LEFT JOIN (
+    SELECT [o].[OrderId], [o].[CustomerId], [o].[IsFulfilled], [o].[OrderDate], [t1].[OrderId] AS [OrderId0], [t1].[ProductsProductId], [t1].[ProductId], [t1].[Name], [t1].[Price]
+    FROM [Orders] AS [o]
+    LEFT JOIN (
+        SELECT [o0].[OrderId], [o0].[ProductsProductId], [p].[ProductId], [p].[Name], [p].[Price]
+        FROM [OrderProduct] AS [o0]
+        INNER JOIN [Products] AS [p] ON [o0].[ProductsProductId] = [p].[ProductId]
+    ) AS [t1] ON [o].[OrderId] = [t1].[OrderId]
+) AS [t0] ON [t].[CustomerId] = [t0].[CustomerId]
+ORDER BY [t].[CustomerId], [t0].[OrderId], [t0].[OrderId0], [t0].[ProductsProductId]
+2024-11-11 11:00:02.6343|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|Closing data reader to 'OrderProcessingSystemDb' on server '(localdb)\MSSQLLocalDB'.
+2024-11-11 11:00:02.6343|DEBUG|Microsoft.EntityFrameworkCore.Database.Command|A data reader for 'OrderProcessingSystemDb' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 1ms reading results.
+2024-11-11 11:00:02.6343|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closing connection to database 'OrderProcessingSystemDb' on server '(localdb)\MSSQLLocalDB'.
+2024-11-11 11:00:02.6343|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Closed connection to database 'OrderProcessingSystemDb' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-11-11 11:00:02.6343|WARN|OrderProcessingSystem.API.Controllers.CustomerController|Customer with ID 22 not found.
+2024-11-11 11:00:02.6343|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method OrderProcessingSystem.API.Controllers.CustomerController.GetCustomerById (OrderProcessingSystem.API), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 158.534ms.
+2024-11-11 11:00:02.6343|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-11-11 11:00:02.6343|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-11-11 11:00:02.6343|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-11-11 11:00:02.6343|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-11-11 11:00:02.6343|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-11-11 11:00:02.6343|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-11-11 11:00:02.6343|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.NotFoundObjectResult.
+2024-11-11 11:00:02.6343|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-11-11 11:00:02.6343|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2024-11-11 11:00:02.6343|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-11 11:00:02.6343|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-11 11:00:02.6343|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-11-11 11:00:02.6343|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-11-11 11:00:02.6343|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.NotFoundObjectResult.
+2024-11-11 11:00:02.6343|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-11-11 11:00:02.6343|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-11-11 11:00:02.6343|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action OrderProcessingSystem.API.Controllers.CustomerController.GetCustomerById (OrderProcessingSystem.API) in 168.1131ms
+2024-11-11 11:00:02.6343|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8225TN5DAA" sending HEADERS frame for stream ID 1 with length 68 and flags END_HEADERS.
+2024-11-11 11:00:02.6343|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'OrderProcessingSystem.API.Controllers.CustomerController.GetCustomerById (OrderProcessingSystem.API)'
+2024-11-11 11:00:02.6343|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8225TN5DAA" sending DATA frame for stream ID 1 with length 30 and flags NONE.
+2024-11-11 11:00:02.6343|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8225TN5DAA" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM.
+2024-11-11 11:00:02.6343|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|'ApplicationDbContext' disposed.
+2024-11-11 11:00:02.6343|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposing connection to database 'OrderProcessingSystemDb' on server '(localdb)\MSSQLLocalDB'.
+2024-11-11 11:00:02.6343|DEBUG|Microsoft.EntityFrameworkCore.Database.Connection|Disposed connection to database '' on server '' (0ms).
+2024-11-11 11:00:02.6343|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7237/api/Customer/22 - 404 - text/plain;+charset=utf-8 170.4256ms
+2024-11-11 11:02:21.8395|INFO|OrderProcessingSystem.API.Program|Starting application
+2024-11-11 11:02:22.2614|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.ModelBinderFactory|Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider
+2024-11-11 11:02:22.3027|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting starting
+2024-11-11 11:02:22.4609|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7237
+2024-11-11 11:02:22.4609|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5286
+2024-11-11 11:02:22.4609|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly OrderProcessingSystem.API
+2024-11-11 11:02:22.4609|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-11-11 11:02:22.4609|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-11-11 11:02:22.4609|DEBUG|Microsoft.AspNetCore.Hosting.Diagnostics|Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-11-11 11:02:22.4956|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-11-11 11:02:22.4956|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-11-11 11:02:22.4956|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\nitya\source\repos\Nityanand_OrderProcessingSystem\OrderProcessingSystem.API
+2024-11-11 11:02:22.4956|DEBUG|Microsoft.Extensions.Hosting.Internal.Host|Hosting started
+2024-11-11 11:02:22.5398|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN8228RSRUT8" accepted.
+2024-11-11 11:02:22.5398|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN8228RSRUT7" accepted.
+2024-11-11 11:02:22.5398|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN8228RSRUT8" started.
+2024-11-11 11:02:22.5398|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN8228RSRUT7" started.
+2024-11-11 11:02:22.5623|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN8228RSRUT8" received FIN.
+2024-11-11 11:02:22.5623|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN8228RSRUT7" received FIN.
+2024-11-11 11:02:22.5757|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-11-11 11:02:22.5757|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Failed to authenticate HTTPS connection.|System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-11-11 11:02:22.5946|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN8228RSRUT8" stopped.
+2024-11-11 11:02:22.5946|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN8228RSRUT7" stopped.
+2024-11-11 11:02:22.5946|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN8228RSRUT7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-11 11:02:22.5946|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets|Connection id "0HN8228RSRUT8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-11-11 11:02:22.8197|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN8228RSRUT9" accepted.
+2024-11-11 11:02:22.8197|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Connections|Connection id "0HN8228RSRUT9" started.
+2024-11-11 11:02:23.3619|DEBUG|Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware|Connection 0HN8228RSRUT9 established using the following protocol: Tls13
+2024-11-11 11:02:23.3829|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-11-11 11:02:23.3856|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-11-11 11:02:23.3856|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" received SETTINGS frame for stream ID 0 with length 24 and flags NONE.
+2024-11-11 11:02:23.3856|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-11-11 11:02:23.3856|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-11-11 11:02:23.3856|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" received HEADERS frame for stream ID 1 with length 490 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-11-11 11:02:23.4025|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" received SETTINGS frame for stream ID 0 with length 0 and flags ACK.
+2024-11-11 11:02:23.4198|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7237/swagger/index.html - - -
+2024-11-11 11:02:23.4999|DEBUG|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|Wildcard detected, all requests with hosts will be allowed.
+2024-11-11 11:02:23.4999|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-11-11 11:02:23.5125|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.html'
+2024-11-11 11:02:23.5125|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-11-11 11:02:23.5505|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup is scheduled to include Browser Link script injection.
+2024-11-11 11:02:23.5505|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup is scheduled to include browser refresh script injection.
+2024-11-11 11:02:23.5505|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending HEADERS frame for stream ID 1 with length 66 and flags END_HEADERS.
+2024-11-11 11:02:23.5505|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 1 with length 1055 and flags NONE.
+2024-11-11 11:02:23.5505|DEBUG|Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware|Response markup was updated to include Browser Link script injection.
+2024-11-11 11:02:23.5505|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 1 with length 81 and flags NONE.
+2024-11-11 11:02:23.5505|DEBUG|Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware|Response markup was updated to include browser refresh script injection.
+2024-11-11 11:02:23.5505|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 1 with length 0 and flags END_STREAM.
+2024-11-11 11:02:23.5505|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7237/swagger/index.html - 200 - text/html;charset=utf-8 142.5814ms
+2024-11-11 11:02:23.5615|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" received HEADERS frame for stream ID 3 with length 115 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-11-11 11:02:23.5615|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" received HEADERS frame for stream ID 5 with length 35 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-11-11 11:02:23.5615|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7237/_framework/aspnetcore-browser-refresh.js - - -
+2024-11-11 11:02:23.5615|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7237/swagger/index.js - - -
+2024-11-11 11:02:23.5615|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-11-11 11:02:23.5615|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/index.js'
+2024-11-11 11:02:23.5615|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-11-11 11:02:23.5615|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending HEADERS frame for stream ID 5 with length 41 and flags END_HEADERS.
+2024-11-11 11:02:23.5615|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 5 with length 3123 and flags NONE.
+2024-11-11 11:02:23.5615|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 5 with length 0 and flags END_STREAM.
+2024-11-11 11:02:23.5615|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7237/swagger/index.js - 200 - application/javascript;charset=utf-8 2.7014ms
+2024-11-11 11:02:23.5615|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending HEADERS frame for stream ID 3 with length 60 and flags END_HEADERS.
+2024-11-11 11:02:23.5615|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 3 with length 13786 and flags NONE.
+2024-11-11 11:02:23.5615|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" received HEADERS frame for stream ID 7 with length 57 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-11-11 11:02:23.5615|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7237/_vs/browserLink - - -
+2024-11-11 11:02:23.5615|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 3 with length 0 and flags END_STREAM.
+2024-11-11 11:02:23.5615|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7237/_framework/aspnetcore-browser-refresh.js - 200 13786 application/javascript;+charset=utf-8 6.4559ms
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending HEADERS frame for stream ID 7 with length 119 and flags END_HEADERS.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 9986 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 10240 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 10240 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 10240 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 10240 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 10240 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 10240 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 10240 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 10240 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 10240 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 10240 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 10240 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 10240 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 10240 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 10240 and flags NONE.
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 160 and flags NONE.
+2024-11-11 11:02:23.5897|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7237/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 31.5027ms
+2024-11-11 11:02:23.5897|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 7 with length 0 and flags END_STREAM.
+2024-11-11 11:02:23.6277|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" received HEADERS frame for stream ID 9 with length 74 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-11-11 11:02:23.6277|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7237/swagger/v1/swagger.json - - -
+2024-11-11 11:02:23.6277|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-11-11 11:02:23.6277|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|No candidates found for the request path '/swagger/v1/swagger.json'
+2024-11-11 11:02:23.6277|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request did not match any endpoints
+2024-11-11 11:02:23.7004|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending HEADERS frame for stream ID 9 with length 35 and flags END_HEADERS.
+2024-11-11 11:02:23.7004|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 9 with length 2406 and flags NONE.
+2024-11-11 11:02:23.7004|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7237/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 71.9710ms
+2024-11-11 11:02:23.7004|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 9 with length 0 and flags END_STREAM.
+2024-11-11 11:02:29.9598|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" received HEADERS frame for stream ID 11 with length 32 and flags END_STREAM, END_HEADERS, PRIORITY.
+2024-11-11 11:02:29.9598|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7237/api/Customer - - -
+2024-11-11 11:02:29.9598|TRACE|Microsoft.AspNetCore.HostFiltering.HostFilteringMiddleware|All hosts are allowed.
+2024-11-11 11:02:29.9761|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|1 candidate(s) found for the request path '/api/Customer'
+2024-11-11 11:02:29.9836|DEBUG|Microsoft.AspNetCore.Routing.Matching.DfaMatcher|Endpoint 'OrderProcessingSystem.API.Controllers.CustomerController.GetAllCustomers (OrderProcessingSystem.API)' with route pattern 'api/Customer' is valid for the request path '/api/Customer'
+2024-11-11 11:02:29.9836|DEBUG|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|Request matched endpoint 'OrderProcessingSystem.API.Controllers.CustomerController.GetAllCustomers (OrderProcessingSystem.API)'
+2024-11-11 11:02:29.9836|TRACE|Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware|The endpoint does not specify the IRequestSizeLimitMetadata.
+2024-11-11 11:02:29.9836|DEBUG|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Static files was skipped as the request already matched an endpoint.
+2024-11-11 11:02:29.9836|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'OrderProcessingSystem.API.Controllers.CustomerController.GetAllCustomers (OrderProcessingSystem.API)'
+2024-11-11 11:02:30.0499|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllCustomers", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllCustomers() on controller OrderProcessingSystem.API.Controllers.CustomerController (OrderProcessingSystem.API).
+2024-11-11 11:02:30.0499|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of authorization filters (in the following order): None
+2024-11-11 11:02:30.0499|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of resource filters (in the following order): None
+2024-11-11 11:02:30.0499|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of action filters (in the following order): Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000), Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)
+2024-11-11 11:02:30.0499|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of exception filters (in the following order): None
+2024-11-11 11:02:30.0499|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Execution plan of result filters (in the following order): Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)
+2024-11-11 11:02:30.0499|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing controller factory for controller OrderProcessingSystem.API.Controllers.CustomerController (OrderProcessingSystem.API)
+2024-11-11 11:02:30.3643|DEBUG|Microsoft.EntityFrameworkCore.Infrastructure|An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-11-11 11:02:30.4061|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed controller factory for controller OrderProcessingSystem.API.Controllers.CustomerController (OrderProcessingSystem.API)
+2024-11-11 11:02:30.4061|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-11-11 11:02:30.4061|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-11-11 11:02:30.4061|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-11-11 11:02:30.4061|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-11-11 11:02:30.4216|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method OrderProcessingSystem.API.Controllers.CustomerController.GetAllCustomers (OrderProcessingSystem.API) - Validation state: Valid
+2024-11-11 11:02:30.4216|INFO|OrderProcessingSystem.API.Controllers.CustomerController|Received request to fetch all customers.
+2024-11-11 11:02:30.5568|ERROR|CustomerRepository|Error fetching all customers|System.NotImplementedException: The method or operation is not implemented.
+   at CustomerRepository.GetAllCustomersAsync() in C:\Users\nitya\source\repos\Nityanand_OrderProcessingSystem\OrderProcessingSystem.Repositories\CustomerRepository .cs:line 23
+2024-11-11 11:02:30.7595|ERROR|OrderProcessingSystem.API.Controllers.CustomerController|An error occurred while fetching all customers.|System.NotImplementedException: The method or operation is not implemented.
+   at CustomerRepository.GetAllCustomersAsync() in C:\Users\nitya\source\repos\Nityanand_OrderProcessingSystem\OrderProcessingSystem.Repositories\CustomerRepository .cs:line 23
+   at OrderProcessingSystem.Services.CustomerService.GetAllCustomersAsync() in C:\Users\nitya\source\repos\Nityanand_OrderProcessingSystem\OrderProcessingSystem.Services\CustomerService .cs:line 22
+   at OrderProcessingSystem.API.Controllers.CustomerController.GetAllCustomers() in C:\Users\nitya\source\repos\Nityanand_OrderProcessingSystem\OrderProcessingSystem.API\Controllers\CustomerController.cs:line 27
+2024-11-11 11:02:30.7852|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method OrderProcessingSystem.API.Controllers.CustomerController.GetAllCustomers (OrderProcessingSystem.API), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 352.725ms.
+2024-11-11 11:02:30.7852|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-11-11 11:02:30.7852|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter.
+2024-11-11 11:02:30.7852|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: Before executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-11-11 11:02:30.7852|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Action Filter: After executing OnActionExecuted on filter Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter.
+2024-11-11 11:02:30.7852|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-11-11 11:02:30.7852|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuting on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-11-11 11:02:30.7852|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Before executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2024-11-11 11:02:30.7922|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|List of registered output formatters, in the following order: Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter, Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter
+2024-11-11 11:02:30.7922|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|No information found on request to perform content negotiation.
+2024-11-11 11:02:30.7922|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-11-11 11:02:30.7922|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Attempting to select the first formatter in the output formatters list which can write the result.
+2024-11-11 11:02:30.7922|DEBUG|Microsoft.AspNetCore.Mvc.Infrastructure.DefaultOutputFormatterSelector|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-11-11 11:02:30.7922|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2024-11-11 11:02:30.7922|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|After executing action result Microsoft.AspNetCore.Mvc.ObjectResult.
+2024-11-11 11:02:30.7922|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: Before executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-11-11 11:02:30.7922|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending HEADERS frame for stream ID 11 with length 60 and flags END_HEADERS.
+2024-11-11 11:02:30.7922|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 11 with length 21 and flags NONE.
+2024-11-11 11:02:30.7922|TRACE|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Result Filter: After executing OnResultExecuted on filter Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter.
+2024-11-11 11:02:30.7922|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" received WINDOW_UPDATE frame for stream ID 0 with length 4 and flags 0x0.
+2024-11-11 11:02:30.8091|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action OrderProcessingSystem.API.Controllers.CustomerController.GetAllCustomers (OrderProcessingSystem.API) in 746.4252ms
+2024-11-11 11:02:30.8091|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'OrderProcessingSystem.API.Controllers.CustomerController.GetAllCustomers (OrderProcessingSystem.API)'
+2024-11-11 11:02:30.8091|TRACE|Microsoft.AspNetCore.Server.Kestrel.Http2|Connection id "0HN8228RSRUT9" sending DATA frame for stream ID 11 with length 0 and flags END_STREAM.
+2024-11-11 11:02:30.8091|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7237/api/Customer - 500 - text/plain;+charset=utf-8 850.0010ms
